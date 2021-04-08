@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "start:build": "tsc -w",
+    "start:run": "nodemon build/index.js",
+    "start": "concuurrently npm:start:*"
+  },
   "dependencies": {
     "concurrently": "^6.0.0",
     "nodemon": "^2.0.7"
