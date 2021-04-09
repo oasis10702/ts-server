@@ -6,7 +6,7 @@
   "scripts": {
     "start:build": "tsc -w",
     "start:run": "nodemon build/index.js",
-    "start": "concuurrently npm:start:*"
+    "start": "concurrently npm:start:*"
   },
   "dependencies": {
     "concurrently": "^6.0.0",
