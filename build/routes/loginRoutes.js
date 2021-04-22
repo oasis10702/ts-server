@@ -9,8 +9,8 @@ router.get('/login', function (req, res) {
 router.post('/login', function (req, res) {
     var _a = req.body, email = _a.email, password = _a.password;
     if (email && password && email === 'hi@hi.com' && password === 'password') {
-        // mark this person as logged in
-        // redirect them to root route
+        req.session = { loggedIn: true };
+        res.redirect('/');
     }
     else {
         res.send('Invalid email or password');
