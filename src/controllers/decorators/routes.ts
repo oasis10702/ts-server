@@ -9,6 +9,7 @@ function routerBinder(method: string) {
   };
 }
 
+// METHODS
 export const get = routerBinder('get');
 export const put = routerBinder('put');
 export const post = routerBinder('post');
